@@ -18,7 +18,8 @@ for (j = '0'; j <= '9'; j++)
 		{
 			putchar(j);
 			putchar(k);
-			if (j != 8 && k != 9)
+			if (j == '8' && k == '9')
+				continue;
 			putchar(',');
 			putchar(' ');
 		}
