@@ -1,23 +1,21 @@
 #include <stdio.h>
 #include <ctype.h>
 /**
-  * main - prints out every combination of alphabet
+  * main - prints out every single didit seperated by comma and white space
   * Return: returns 0
   */
 
 int main(void)
 {
 int j;
-int k;
 
-for (j = 'a'; j <= 'z'; j++)
+	for (j = '0'; j <= '9'; j++)
 	{
-	for (k = 'a'; k <= 'z'; k++)
-		{
 		putchar(j);
-		putchar(k);
+		if (j != 9)
+		{
 		putchar(',');
-		putchar('\n');
+		putchar(' ');
 		}
 	}
 	return (0);
