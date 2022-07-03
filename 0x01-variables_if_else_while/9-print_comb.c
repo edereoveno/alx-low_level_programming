@@ -18,5 +18,6 @@ int j;
 		putchar(' ');
 		}
 	}
+	putchar('\n')
 	return (0);
 }
