@@ -10,15 +10,20 @@ int main(void)
 int j;
 int k;
 
-for (j = 'a'; j <= 'z'; j++)
+for (j = '0'; j <= '9'; j++)
+{
+	for (k = j + 1; k <= '9'; k++)
 	{
-	for (k = 'a'; k <= 'z'; k++)
+		if (k != j)
 		{
-		putchar(j);
-		putchar(k);
-		putchar(',');
-		putchar('\n');
+			putchar(j);
+			putchar(k);
+			if (j != 8 && k != 9)
+			putchar(',');
+			putchar(' ');
 		}
 	}
+}
+	putchar('\n');
 	return (0);
 }
