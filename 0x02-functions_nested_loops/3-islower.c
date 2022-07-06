@@ -1,10 +1,10 @@
 #include "main.h"
 #include <ctype.h>
-#define UC(c)
 
 /**
-  * int _islower(int c) - checks if value is lowercase
+  * _islower - checks if value is lowercase
   * int main(void) - calls function
+  * @c: the variable to be checked
   * Return: returns 1
   */
 
