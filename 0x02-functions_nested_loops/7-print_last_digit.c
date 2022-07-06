@@ -2,7 +2,7 @@
 
 /**
   * print_last_digit - returns last digit
-  * @l: last digit
+  * @n: parameter
   * Return: returns l
   */
 int print_last_digit(int n)
