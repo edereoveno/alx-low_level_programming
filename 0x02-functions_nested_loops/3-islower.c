@@ -16,7 +16,7 @@ int main(void)
 
 int _islower(int c)
 {
-	if (islower(c))
+	if (islower())
 	{
 		return (1);
 	}
