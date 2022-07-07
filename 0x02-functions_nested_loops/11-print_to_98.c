@@ -1,17 +1,25 @@
 #include "main.h"
+#include <stdio.h>
 
+/**
+  * print_to_98 - prints from number to 98
+  * @n: number
+  */
 void print_to_98(int n)
 {
-	int i;
-
-	for (i = n; i < 99; i++)
+	if (n < 98)
 	{
-		_putchar(i);
-		if (i != 98)
+		for (; n < 98; n++)		
 		{
-		_putchar(',');
-		_putchar(' ');
+			printf("%d, ", n);
 		}
 	}
-	_putchar('\n');
+	else
+	{
+		for (; n > 98; n--)
+		{
+			printf("%d ,", n);
+		}
+	}
+		printf("%d\n", n);
 }
