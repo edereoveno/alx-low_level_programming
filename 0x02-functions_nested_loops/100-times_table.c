@@ -2,6 +2,7 @@
 
 /**
  * print_times_table - prints timestable from 0 to 9
+ * @n: timestable limit
  */
 
 void print_times_table(int n)
@@ -24,33 +25,23 @@ int a, b, c;
 					_putchar(' ');
 				}
 				_putchar(c + '0');
-				if (b != n)
-				{
-					_putchar(',');
-					_putchar(' ');
-				}
 			}
 			else if (c > 9 && c < 100)
 			{
 				_putchar(' ');
 				_putchar((c / 10) + '0');
 				_putchar((c % 10) + '0');
-				if (b != n)
-					{
-					_putchar(',');
-					_putchar(' ');
-					}
 			}
 			else
 			{
 				_putchar((c / 100) + '0');
 				_putchar(((c % 100) / 10) + '0');
 				_putchar(((c % 100) % 10) + '0');
-				if (b != n)
-					{
-					_putchar(',');
-					_putchar(' ');
-					}
+			}
+			if (b != n)
+			{
+				_putchar(',');
+				_putchar(' ');
 			}
 		}
 		_putchar('\n');
