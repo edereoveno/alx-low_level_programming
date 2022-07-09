@@ -1,10 +1,19 @@
 #include <stdio.h>
 #include "main.h"
+/**
+ * main - calls print_muliples()
+ * Return: returns 0
+ */
 
-void main(void)
+int main(void)
 {
 	print_multiples(1024);
+	return (0);
 }
+/**
+ * print_multiples - prints mutliples of 3 and 5 before variable
+ * @i: variable
+ */
 void print_multiples(int i)
 {
 	int n;

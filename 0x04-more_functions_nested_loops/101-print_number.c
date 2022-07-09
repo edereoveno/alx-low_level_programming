@@ -1,10 +1,10 @@
 #include <stdio.h>
+
 /**
  * main - function that prints largest prime factor)
  * Return: 0
  */
-
-int main(void)
+void main()
 {
 	long num = 612852475143, i;
 
@@ -17,5 +17,4 @@ int main(void)
 		}
 	}
 	prinf("%lu\n", i);
-	return (0);
 }
