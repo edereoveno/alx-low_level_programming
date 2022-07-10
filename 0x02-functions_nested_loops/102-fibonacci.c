@@ -34,6 +34,6 @@ void fibonacci(int n)
 		printf("%lu, ", sum);
 		}
 		else
-		printf("%lu", sum);
+		printf("%lu\n", sum);
 	}
 }
