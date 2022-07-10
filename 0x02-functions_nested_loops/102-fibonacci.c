@@ -29,8 +29,11 @@ void fibonacci(int n)
 		sum = j + k;
 		j = k, k = sum;
 
+		if (i < n)
+		{
 		printf("%lu, ", sum);
-		if (i == n)
+		}
+		else
 		printf("%lu", sum);
 	}
 }
