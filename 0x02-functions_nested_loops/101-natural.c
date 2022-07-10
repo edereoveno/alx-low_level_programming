@@ -16,14 +16,15 @@ int main(void)
  */
 void print_multiples(int i)
 {
-	int n;
+	int n, sum = 0;
 
 	for (n = 3; n < i; n++)
 	{
 		if ((n % 3 == 0) || (n % 5 == 0))
 			{
-			n += n;
-			printf("%d", n);
+			sum += n;
 			}
 	}
+		printf("%d", sum);
+		printf("\n");
 }
