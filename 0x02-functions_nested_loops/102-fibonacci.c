@@ -20,15 +20,17 @@ int main(void)
 
 void fibonacci(int n)
 {
-	int i, j = 0, k = 1;
+	int i;
 
-	long sum;
+	long j = 0, k = 1, sum;
 
-	for (i = 0; i <= n; i++)
+	for (i = 1; i <= n; i++)
 	{
 		sum = j + k;
 		j = k, k = sum;
 
 		printf("%lu, ", sum);
+		if (i == n)
+		printf("%lu", sum);
 	}
 }
