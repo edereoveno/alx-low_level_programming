@@ -26,12 +26,12 @@ void fibonacci(int n)
 
 	for (i = 1; i <= n; i++)
 	{
-		if (sum < n)
-		{
 		l = j + k;
 		j = k, k = l;
 		sum = k + l;
-		}
 	}
+		if (i % 2 == 0)
+		{
 		printf("%lu", sum);
+		}
 }
