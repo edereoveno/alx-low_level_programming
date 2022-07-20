@@ -1,6 +1,9 @@
 #include "main.h"
 
-
+/**
+ * print_chessboard - print elements of double array
+ * @a: pointer to arrray
+*/
 
 void print_chessboard(char (*a)[8])
 {
