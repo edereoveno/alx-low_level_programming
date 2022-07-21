@@ -2,7 +2,7 @@
 
 /**
 * if_prime - checks whether n is prime
-* @n to be checked
+* @n: to be checked
 * @g: integer
 * Return: 1 if prime, 0 if not
 */
