@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	fibonacci(4000000);
+	fibonacci(3);
 
 	return (0);
 }
@@ -22,16 +22,18 @@ void fibonacci(int n)
 {
 	int i;
 
-	long j = 0, k = 1, l, sum = 0;
+	long j = 0, k = 1, l, sum;
 
-	for (i = 1; i <= n; i++)
+	for (i = 1; i < n; i++)
 	{
 		l = j + k;
 		j = k, k = l;
-		sum = k + l;
-	}
-		if (i % 2 == 0)
+
+		if (l % 2 == 0)
 		{
-		printf("%lu", sum);
+		sum = l + sum;
 		}
+	}
+		
+		printf("%lu", sum);
 }
