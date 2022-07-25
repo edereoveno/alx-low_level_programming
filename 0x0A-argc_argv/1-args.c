@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - prints name of file
+ * main - prints no of attributes
  * @argc: argument count
  * @argv: argument vector
  * Return: 0
