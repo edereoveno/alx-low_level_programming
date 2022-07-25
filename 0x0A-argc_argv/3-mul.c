@@ -12,9 +12,9 @@ int main(int argc, char *argv[])
 {
 	int mul;
 
-	if (argc >= 3)
+	if (argc == 3)
 	{
-		mul = atoi(argv[argc - 1]) * atoi(argv[argc - 2]);
+		mul = atoi(argv[1]) * atoi(argv[2]);
 		printf("%d", mul);
 		putchar('\n');
 	}
