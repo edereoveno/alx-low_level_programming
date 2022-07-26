@@ -22,7 +22,7 @@ char *_strdup(char *str)
 		len++;
 	}
 	/* multiply length with size of char to get memory for duplicate string */
-	ar = malloc(sizeof(char) * len++);
+	ar = malloc(sizeof(*str) * len);
 
 	if (ar == NULL)
 		return (NULL);
