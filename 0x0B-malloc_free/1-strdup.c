@@ -24,6 +24,8 @@ char *_strdup(char *str)
 	/* multiply length with size of char to get memory for duplicate string */
 	ar = malloc(sizeof(char) * len);
 
+	if (ar == NULL)
+		return (NULL);
 	/* loop index and copy string */
 	for (i = 0; i < len; i++)
 	{
