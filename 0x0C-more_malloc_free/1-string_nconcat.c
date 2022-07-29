@@ -1,8 +1,8 @@
 #include "main.h"
 #include <stdlib.h>
 
-/*
- * string_concat - concatenates two string
+/**
+ * *string_nconcat - concatenates two string
  * @s1: 1st string
  * @s2: 2nd str
  * @n: len of s2
@@ -11,7 +11,8 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int i, j;
+	int i,
+	unsigned int j;
 
 	char *ar;
 
@@ -42,6 +43,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		i++;
 		j++;
 	}
-	ar[i + j] = '\0';
+	ar[i] = '\0';
 	return (ar);
 }
