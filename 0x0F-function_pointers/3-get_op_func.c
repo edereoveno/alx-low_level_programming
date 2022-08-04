@@ -12,11 +12,11 @@ int (*get_op_func(char *s))(int, int)
 
 	int i = 0;
 
-	while (oper[i] != NULL)
+	while (oper[i].op != NULL)
 	{
 		if (*s == *oper[i].op)
 			return *oper[i].f;
 		i++;
 	}
-	return (NULL):
+	return (NULL);
 }
